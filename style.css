@@ -58,31 +58,29 @@ nav a {
     .navigation {
         display:inline-block;}
 }
-
-.box,.box3 {
-        display: inline-block;
-        flex-direction: column;
-        height: 80%;
-        margin: 0px 100px 0px 0px;
-        text-align: left;
-        width: 100%;
-        position:relative;
-}
 .box {background-image: url(graphic.svg);
     position:static;
 }
 .box3 {
     background-image: url(upsell-footer-image.svg)
 }
+.box,.box3 {
+        display: flex;
+        flex-direction: column;
+        height: 80%;
+        margin: 0px 100px 0px 0px;
+        text-align: left;
+        width: 110%;
+        position:relative;
+    }
 .box,.box3 {    
     padding: 8em;
     background-repeat: no-repeat;
-    background-position:  90% ;
+    background-position:  110% ;
     background-size: 500px 500px;
     margin-bottom: 20px;
     /*overflow: hidden;*/
 }
-
 .header5 {
     color: #FF3998;
     font-family: 'Inter';
@@ -96,8 +94,8 @@ nav a {
     background-image {
         background-size: 200px 200px;
     }
-}
-    
+
+}  
 .header1 {
     color: #111111;
     font-size:xxx-large;
@@ -130,16 +128,16 @@ nav a {
     width: 100%;
 }
 .background-image {
-    position: relative;
     display: flex;
+    position: relative;
     width: 100%;
 }
 .text-block {
-    position:relative;
     bottom: 150px;
     left: 20px;
     padding-left: 80px;
     padding-right: 80px;
+    position:relative;
   }
   .header2 {
     font-size:xx-large;
@@ -154,6 +152,7 @@ nav a {
     font-size: 30px;
     line-height: 100%;
     padding: 20px;
+    width: 50%;
   }
  /* @media only screen and (min-width:768px) {
     .box .header1 .paragraph .button .box2 .text-block .header2 .paragraph2 {
@@ -185,21 +184,54 @@ nav a {
   }
   h3 {
     color: #555555;
+    font-family:'Courier New', Courier, monospace;
     font-size:x-large;
     font-style: normal;
     font-weight: 500;
     height: 60px;
     line-height: 50px;
     size: 40px;
-    font-family:'Courier New', Courier, monospace;
     margin-left: 80px;
-    
   }
-  footer-container {
+  .supper-paragraph {
+    color: #555555;
+    display: flex;
+    height: 90px;
+    font-family:'Courier New', Courier, monospace;
+    font: size 20px;
+    font-style: normal;
+    font-weight: 400;
+    height: 60px;
+    line-height: 30px;
+    size: 40px;
+    margin-left: 80px;
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    margin: 20px;
+  }
+  card {
+    width: 50%;
+    height: 50%;
+  }
+  figcaption {
+    text-align: justify;
+  }
+  figure {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 2px;
+    border-radius: 5px;
+    background-color: rgba(228, 222, 222, 0.473);
+  }
+  .footer-container {
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
-    /*padding-bottom: 4rem;*/
+    justify-content:space-evenly;
+    padding-bottom: 4rem;
 }
   /*.footer {
     height: 4.5rem;
@@ -210,13 +242,13 @@ nav a {
     }*/
           
     
-  /*.left-side {
-    display: inline-block;
-    flex-direction: column;
-  }*/
-  .right-side {
+  .left-side {
     display: flex;
     flex-direction: column;
+  }
+  .right-side {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     height: 80vh;
   }
@@ -238,6 +270,7 @@ nav a {
   }
   
 .bottom {
-    display: inline-flex;
-    justify-content: space-between;
+    display: flex;
+    justify-content:space-between;
+    margin-left: 40px;
 }
